@@ -658,13 +658,19 @@
 
     searchInput.addEventListener('input', filterGames);
 
-    // Asignar cascada escalonada (stagger) y clase 3D a las tarjetas del catálogo
+    // Asignar cascada escalonada (stagger), clase 3D y luz interactiva (spotlight) a las tarjetas del catálogo
     gameCards.forEach((card, index) => {
       card.classList.remove('reveal');
       card.classList.add('reveal-card');
       // Retraso por columna (0ms, 150ms, 300ms) para que aparezcan progresivamente y no de golpe
       const colDelay = (index % 3) * 150;
       card.style.setProperty('--delay', `${colDelay}ms`);
+
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
+        card.style.setProperty('--mouse-y', `${e.clientY - rect.top}px`);
+      });
     });
 
     // Animación Scroll Reveal bidireccional y pausada con IntersectionObserver
