@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INK GAMES STORE // Tienda Oficial de Videojuegos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Barra de navegación superior -->
+  <header class="navbar">
+    <a href="#" class="logo">INK<span>GAMES</span> STORE</a>
+    <nav class="nav-links">
+      <a href="#destacado">Estrenos</a>
+      <a href="#seleccion">Destacados</a>
+      <a href="#catalogo">Catálogo (12)</a>
+      <a href="#ofertas">Ofertas</a>
+    </nav>
+    <button class="cart-btn" id="cart-toggle">
+      🛒 Carrito (<span id="cart-count">0</span>) — $<span id="cart-total">0.00</span>
+    </button>
+  </header>
+
+  <!-- Cinta animada continua (Marquee) -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span class="marquee-item">// <b>NUEVO:</b> BLACK SOULS II DISPONIBLE AHORA</span>
+      <span class="marquee-item">// <b>ESTRENO:</b> HOLLOW KNIGHT: SILKSONG</span>
+      <span class="marquee-item">// <b>TENDENCIA:</b> BLACK MYTH: WUKONG & ELDEN RING NIGHTREIGN</span>
+      <span class="marquee-item">// <b>ENTREGA INMEDIATA:</b> CLAVES OFICIALES DE STEAM</span>
+      <span class="marquee-item">// <b>NUEVO:</b> BLACK SOULS II DISPONIBLE AHORA</span>
+      <span class="marquee-item">// <b>ESTRENO:</b> HOLLOW KNIGHT: SILKSONG</span>
+      <span class="marquee-item">// <b>TENDENCIA:</b> BLACK MYTH: WUKONG & ELDEN RING NIGHTREIGN</span>
+      <span class="marquee-item">// <b>ENTREGA INMEDIATA:</b> CLAVES OFICIALES DE STEAM</span>
+    </div>
+  </div>
+
+  <!-- HERO: Inspirado en "JOIN THE NEW ERA OF GAMING" -->
+  <section class="hero">
+    <div class="hero-floating-badges">
+      <span class="badge b1">🪙</span>
+      <span class="badge b2">🎮</span>
+      <span class="badge b3">⚔️</span>
+      <span class="badge b4">🔥</span>
+    </div>
+    <h1 class="display-title reveal-zoom">
+      ÚNETE A LA<br>
+      <span class="accent-word">NUEVA ERA</span> DEL<br>
+      GAMING
+    </h1>
+    <div class="hero-card-center" id="hero-parallax-card">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3855540/b1a169268bb89754248da4fded96ebda8f2f283a/header.jpg" alt="Black Souls II">
+    </div>
+
+    <!-- Sub-bloque Hero: "DEFINING THE NEXT GENERATION OF GAMING" -->
+    <div class="hero-split" id="destacado">
+      <div class="hero-split-text reveal-left">
+        <span class="micro-label">// LANZAMIENTO DE CULTO & TENDENCIA</span>
+        <h2>DEFINIENDO LA PRÓXIMA GENERACIÓN DE JUEGOS</h2>
+        <p>Desde obras de culto oscuro como <strong>Black Souls II</strong> y <strong>Fear & Hunger 2</strong> hasta los mayores lanzamientos actuales como <strong>Black Myth: Wukong</strong>, <strong>Silksong</strong> y <strong>Elden Ring Nightreign</strong>.</p>
+        <a href="#catalogo" class="btn-dark">EXPLORAR CATÁLOGO COMPLETO <span>↗</span></a>
+      </div>
+      <div class="hero-split-image tilted-frame reveal-right">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg" alt="Black Myth: Wukong">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN MORADA: Inspirada en "EXPLORE THE WORLD OF PRIZE KINGDOMS" -->
+  <section class="purple-banner" id="seleccion">
+    <span class="micro-label dark-label reveal">// SELECCIÓN OFICIAL DE LA SEMANA</span>
+    <h2 class="purple-title reveal-zoom">
+      EXPLORA EL MUNDO<br>
+      DE GRANDES AVENTURAS
+    </h2>
+    <div class="featured-showcase">
+      <div class="showcase-item reveal-card" style="--delay: 0ms;" onclick="addToCart('Baldur\'s Gate 3', 49.99)">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg" alt="Baldur's Gate 3">
+        <div class="showcase-info">
+          <h3>BALDUR'S GATE 3</h3>
+          <span>GOTY RPG • $49.99 +</span>
+        </div>
+      </div>
+      <div class="showcase-item reveal-card" style="--delay: 160ms;" onclick="addToCart('God of War Ragnarök', 49.99)">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2322010/header.jpg" alt="God of War Ragnarök">
+        <div class="showcase-info">
+          <h3>GOD OF WAR RAGNARÖK</h3>
+          <span>Acción Épica • $49.99 +</span>
+        </div>
+      </div>
+      <div class="showcase-item reveal-card" style="--delay: 320ms;" onclick="addToCart('Hades II', 29.99)">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145350/header.jpg" alt="Hades II">
+        <div class="showcase-info">
+          <h3>HADES II</h3>
+          <span>Roguelike • $29.99 +</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO PRINCIPAL: Inspirado en "PLAY. WIN. EARN." -->
+  <section class="store-section" id="catalogo">
+    <div class="section-header-center reveal-zoom">
+      <span class="micro-label">// TIENDA DIGITAL OFICIAL</span>
+      <h2 class="display-subtitle">COMPRA. JUEGA. DOMINA.</h2>
+    </div>
+
+    <!-- Barra de filtros y búsqueda de tienda real -->
+    <div class="store-controls reveal">
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Todos (12)</button>
+        <button class="filter-btn" data-filter="culto">RPG Oscuro & Culto</button>
+        <button class="filter-btn" data-filter="actuales">Estrenos Actuales</button>
+        <button class="filter-btn" data-filter="accion">Acción & AAA</button>
+      </div>
+      <input type="text" id="game-search" class="search-input" placeholder="🔍 Buscar juego (ej. Black Souls 2, Wukong)...">
+    </div>
+
+    <div class="games-grid" id="games-grid">
+      <!-- 1. BLACK SOULS II -->
+      <article class="game-card reveal" data-category="culto" data-title="black souls ii 2">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3855540/b1a169268bb89754248da4fded96ebda8f2f283a/header.jpg" alt="BLACK SOULS II">
+          <span class="badge-hot badge-cult">★ RPG DE CULTO</span>
+          <span class="price-tag">$15.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 01 DARK FANTASY RPG</span>
+            <span class="rating-stars">★★★★★ 98%</span>
+          </div>
+          <h3>BLACK SOULS II</h3>
+          <p>Adéntrate en el País de las Maravillas retorcido. Un RPG psicológico y oscuro con combates intensos y múltiples finales.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('BLACK SOULS II', 15.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/3855540/BLACK_SOULS_II/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. BLACK MYTH: WUKONG -->
+      <article class="game-card reveal" data-category="actuales accion" data-title="black myth wukong">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg" alt="Black Myth: Wukong">
+          <span class="badge-hot">🔥 TOP VENTAS</span>
+          <span class="price-tag">$59.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 02 ACTION RPG</span>
+            <span class="rating-stars">★★★★★ 96%</span>
+          </div>
+          <h3>BLACK MYTH: WUKONG</h3>
+          <p>Encarna al Predestinado en este RPG de acción basado en la mitología china y enfrenta criaturas legendarias.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('Black Myth: Wukong', 59.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/2358720/Black_Myth_Wukong/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. HOLLOW KNIGHT: SILKSONG -->
+      <article class="game-card reveal" data-category="actuales culto" data-title="hollow knight silksong">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030300/header.jpg" alt="Hollow Knight: Silksong">
+          <span class="badge-hot">⚡ NUEVO</span>
+          <span class="price-tag">$19.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 03 METROIDVANIA</span>
+            <span class="rating-stars">★★★★★ 99%</span>
+          </div>
+          <h3>HOLLOW KNIGHT: SILKSONG</h3>
+          <p>Asciende al pico de un reino embrujado gobernado por la seda y la canción con más de 150 nuevos enemigos.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('Hollow Knight: Silksong', 19.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. ELDEN RING NIGHTREIGN -->
+      <article class="game-card reveal" data-category="actuales accion" data-title="elden ring nightreign">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2622380/header.jpg" alt="Elden Ring Nightreign">
+          <span class="badge-hot">🔥 ESTRENO</span>
+          <span class="price-tag">$39.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 04 CO-OP SOULS</span>
+            <span class="rating-stars">★★★★★ 94%</span>
+          </div>
+          <h3>ELDEN RING NIGHTREIGN</h3>
+          <p>Sobrevive a la noche implacable en Limveld junto a otros guerreros y derrota al Señor de la Noche.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('Elden Ring Nightreign', 39.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/2622380/ELDEN_RING_NIGHTREIGN/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. FEAR & HUNGER 2: TERMINA -->
+      <article class="game-card reveal" data-category="culto" data-title="fear & hunger 2 termina">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2171440/header.jpg" alt="Fear & Hunger 2: Termina">
+          <span class="badge-hot badge-cult">★ HORROR RPG</span>
+          <span class="price-tag">$11.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 05 SURVIVAL HORROR RPG</span>
+            <span class="rating-stars">★★★★★ 97%</span>
+          </div>
+          <h3>FEAR & HUNGER 2: TERMINA</h3>
+          <p>3 días para sobrevivir al Festival de Termina. Solo uno de los 14 participantes podrá quedar con vida.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('Fear & Hunger 2: Termina', 11.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/2171440/Fear__Hunger_2_Termina/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. CLAIR OBSCUR: EXPEDITION 33 -->
+      <article class="game-card reveal" data-category="actuales" data-title="clair obscur expedition 33">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/header.jpg" alt="Clair Obscur: Expedition 33">
+          <span class="badge-hot">✨ ACLAMADO</span>
+          <span class="price-tag">$49.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 06 RPG POR TURNOS</span>
+            <span class="rating-stars">★★★★★ 98%</span>
+          </div>
+          <h3>CLAIR OBSCUR: EXPEDITION 33</h3>
+          <p>Lidera la Expedición 33 para destruir a la Peintresse antes de que pinte su próximo número maldito.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('Clair Obscur: Expedition 33', 49.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. MONSTER HUNTER WILDS -->
+      <article class="game-card reveal" data-category="actuales accion" data-title="monster hunter wilds">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2246340/header.jpg" alt="Monster Hunter Wilds">
+          <span class="badge-hot">🔥 POPULAR</span>
+          <span class="price-tag">$69.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 07 CAZA & ACCIÓN</span>
+            <span class="rating-stars">★★★★☆ 91%</span>
+          </div>
+          <h3>MONSTER HUNTER WILDS</h3>
+          <p>Explora las Tierras Prohibidas, un ecosistema vivo y cambiante repleto de monstruos colosales.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('Monster Hunter Wilds', 69.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/2246340/Monster_Hunter_Wilds/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. DOOM: THE DARK AGES -->
+      <article class="game-card reveal" data-category="actuales accion" data-title="doom the dark ages">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3017860/header.jpg" alt="DOOM: The Dark Ages">
+          <span class="badge-hot">⚡ ESTRENO</span>
+          <span class="price-tag">$69.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 08 SHOOTER BRUTAL</span>
+            <span class="rating-stars">★★★★★ 95%</span>
+          </div>
+          <h3>DOOM: THE DARK AGES</h3>
+          <p>Conviértete en el DOOM Slayer en esta guerra medieval oscura y siniestra contra las hordas del Infierno.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('DOOM: The Dark Ages', 69.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/3017860/DOOM_The_Dark_Ages/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9. ULTRAKILL -->
+      <article class="game-card reveal" data-category="culto accion" data-title="ultrakill">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1229490/header.jpg" alt="ULTRAKILL">
+          <span class="badge-hot badge-cult">★ 99% POSITIVO</span>
+          <span class="price-tag">$24.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 09 FAST RETRO FPS</span>
+            <span class="rating-stars">★★★★★ 99%</span>
+          </div>
+          <h3>ULTRAKILL</h3>
+          <p>La humanidad ha desaparecido, la sangre es combustible y el infierno está lleno en este frenético FPS.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('ULTRAKILL', 24.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/1229490/ULTRAKILL/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10. PERSONA 3 RELOAD -->
+      <article class="game-card reveal" data-category="culto actuales" data-title="persona 3 reload">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2161700/header.jpg" alt="Persona 3 Reload">
+          <span class="price-tag">$44.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 10 JRPG</span>
+            <span class="rating-stars">★★★★★ 97%</span>
+          </div>
+          <h3>PERSONA 3 RELOAD</h3>
+          <p>Adéntrate en la Hora Oscura y despierta lo más profundo de tu corazón en esta reinvención del clásico JRPG.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('Persona 3 Reload', 44.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/2161700/Persona_3_Reload/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 11. ELDEN RING: SHADOW OF THE ERDTREE -->
+      <article class="game-card reveal" data-category="accion" data-title="elden ring">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg" alt="Elden Ring">
+          <span class="price-tag">$39.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 11 OPEN WORLD SOULS</span>
+            <span class="rating-stars">★★★★★ 95%</span>
+          </div>
+          <h3>ELDEN RING</h3>
+          <p>Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden en las Tierras Intermedias.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('Elden Ring', 39.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 12. CYBERPUNK 2077 -->
+      <article class="game-card reveal" data-category="accion" data-title="cyberpunk 2077">
+        <div class="game-img-wrap">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077">
+          <span class="price-tag">$29.99</span>
+        </div>
+        <div class="game-body">
+          <div class="game-meta-top">
+            <span class="micro-label">// 12 SCI-FI RPG</span>
+            <span class="rating-stars">★★★★★ 94%</span>
+          </div>
+          <h3>CYBERPUNK 2077</h3>
+          <p>Conviértete en V, un mercenario urbano equipado con mejoras cibernéticas en la megalópolis de Night City.</p>
+          <div class="card-actions">
+            <button class="btn-buy" onclick="addToCart('Cyberpunk 2077', 29.99)">AÑADIR AL CARRITO ↗</button>
+            <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank" class="steam-link">Steam</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- 3 Columnas estilo Ink Games: "BUILD YOUR KINGDOM / CRUSH YOUR OPPONENTS / EARN REAL REWARDS" -->
+    <div class="pillars-row">
+      <div class="pillar reveal-left" style="--delay: 0ms;">
+        <span class="micro-label">// JUEGA</span>
+        <h4>ARMA TU BIBLIOTECA</h4>
+      </div>
+      <div class="pillar reveal" style="--delay: 160ms;">
+        <span class="micro-label">// EXPLORA</span>
+        <h4>INDIES DE CULTO & AAA</h4>
+      </div>
+      <div class="pillar reveal-right" style="--delay: 320ms;">
+        <span class="micro-label">// AHORRA</span>
+        <h4>CLAVES OFICIALES STEAM</h4>
+      </div>
+    </div>
+
+    <!-- Lista de Ofertas estilo "LATEST FROM INK GAMES" -->
+    <div class="latest-deals" id="ofertas">
+      <span class="micro-label reveal">// DESCUENTOS RELÁMPAGO</span>
+      <h2 class="reveal-zoom">ÚLTIMAS OFERTAS<br>EN TIENDA</h2>
+
+      <div class="deal-row reveal-left" style="--delay: 0ms;">
+        <span class="deal-discount">-35% OFF</span>
+        <span class="deal-genre">RPG DE CULTO</span>
+        <span class="deal-title">BLACK SOULS (Parte I) — Edición Completa Steam ($9.99)</span>
+        <button class="btn-small" onclick="addToCart('BLACK SOULS I', 9.99)">Agregar +</button>
+      </div>
+      <div class="deal-row reveal-left" style="--delay: 130ms;">
+        <span class="deal-discount">-50% OFF</span>
+        <span class="deal-genre">SURVIVAL HORROR</span>
+        <span class="deal-title">Resident Evil 4 Remake — Edición Estándar ($19.99)</span>
+        <button class="btn-small" onclick="addToCart('Resident Evil 4 Remake', 19.99)">Agregar +</button>
+      </div>
+      <div class="deal-row reveal-left" style="--delay: 260ms;">
+        <span class="deal-discount">-67% OFF</span>
+        <span class="deal-genre">MUNDO ABIERTO</span>
+        <span class="deal-title">Red Dead Redemption 2 — Ultimate Edition ($19.99)</span>
+        <button class="btn-small" onclick="addToCart('Red Dead Redemption 2', 19.99)">Agregar +</button>
+      </div>
+      <div class="deal-row reveal-left" style="--delay: 390ms;">
+        <span class="deal-discount">-70% OFF</span>
+        <span class="deal-genre">FANTASÍA</span>
+        <span class="deal-title">The Witcher 3: Wild Hunt — Complete Edition ($14.99)</span>
+        <button class="btn-small" onclick="addToCart('The Witcher 3: Wild Hunt', 14.99)">Agregar +</button>
+      </div>
+    </div>
+
+    <!-- Bloque final oscuro estilo "STEP INSIDE THE INK HQ" -->
+    <div class="hq-banner">
+      <div class="hq-text reveal-left">
+        <span class="micro-label">// COMUNIDAD GAMER</span>
+        <h2>ENTRA AL<br>PORTAL INK GAMES</h2>
+        <a href="https://store.steampowered.com" target="_blank" class="btn-dark">IR A STEAM OFICIAL <span>↗</span></a>
+      </div>
+      <div class="hq-image tilted-frame-right reveal-right">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1903340/header.jpg" alt="Portal Gamer">
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal / Drawer del Carrito -->
+  <div class="cart-modal-overlay" id="cart-modal">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3>TU CARRITO DE COMPRAS</h3>
+        <button class="close-cart" id="close-cart">✕</button>
+      </div>
+      <div class="cart-items-list" id="cart-items-list">
+        <p style="color:#9ca3af; font-size:0.9rem;">Tu carrito está vacío. ¡Agrega tus juegos favoritos!</p>
+      </div>
+      <div class="cart-drawer-footer">
+        <div class="cart-total-line">
+          <span>TOTAL:</span>
+          <span>$<span id="drawer-total">0.00</span> USD</span>
+        </div>
+        <button class="btn-checkout" id="checkout-btn">FINALIZAR COMPRA ↗</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notificación Toast -->
+  <div class="toast-notification" id="toast">
+    ✅ Juego añadido al carrito
+  </div>
+
+  <!-- FOOTER BLANCO: Fiel al final de inkgames.com -->
+  <footer class="white-footer">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h5>TIENDA</h5>
+        <a href="#destacado">Estrenos</a>
+        <a href="#catalogo">Catálogo Completo</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="https://store.steampowered.com" target="_blank">Steam Oficial</a>
+      </div>
+      <div class="footer-col">
+        <h5>SÍGUENOS</h5>
+        <a href="#">Instagram</a>
+        <a href="#">X (Twitter)</a>
+        <a href="#">Discord</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="footer-col">
+        <h5>SOPORTE</h5>
+        <a href="#">Preguntas Frecuentes</a>
+        <a href="#">Claves Digitales</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-address">
+        <strong>// PROYECTO</strong>
+        <p>INK GAMES STORE<br>Tienda de Videojuegos Reales<br>Edición 2026</p>
+      </div>
+      <div class="footer-legal">
+        <strong>LEGAL</strong>
+        <p>Privacidad<br>Términos y Condiciones</p>
+      </div>
+    </div>
+
+    <div class="footer-logo-mark">🦑 INK GAMES</div>
+  </footer>
+
+  <script>
+    const cart = [];
+    const cartBtn = document.getElementById('cart-toggle');
+    const cartModal = document.getElementById('cart-modal');
+    const closeCartBtn = document.getElementById('close-cart');
+    const cartItemsList = document.getElementById('cart-items-list');
+    const toast = document.getElementById('toast');
+    let toastTimeout;
+
+    function addToCart(gameName, price) {
+      cart.push({ name: gameName, price });
+      updateCartUI();
+
+      // Animación del botón de carrito
+      cartBtn.classList.remove('bump');
+      void cartBtn.offsetWidth;
+      cartBtn.classList.add('bump');
+
+      // Mostrar notificación Toast
+      toast.textContent = `✅ "${gameName}" añadido al carrito ($${price.toFixed(2)})`;
+      toast.classList.add('show');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => toast.classList.remove('show'), 2600);
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const total = cart.reduce((acc, item) => acc + item.price, 0);
+      document.getElementById('cart-count').textContent = cart.length;
+      document.getElementById('cart-total').textContent = total.toFixed(2);
+      document.getElementById('drawer-total').textContent = total.toFixed(2);
+
+      if (cart.length === 0) {
+        cartItemsList.innerHTML = '<p style="color:#9ca3af; font-size:0.9rem;">Tu carrito está vacío. ¡Agrega tus juegos favoritos!</p>';
+      } else {
+        cartItemsList.innerHTML = cart.map((item, i) => `
+          <div class="cart-item-row">
+            <span>${item.name}</span>
+            <div>
+              <strong style="color:#c054ff;">$${item.price.toFixed(2)}</strong>
+              <button class="cart-item-remove" onclick="removeFromCart(${i})">✕</button>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    cartBtn.addEventListener('click', () => cartModal.classList.add('open'));
+    closeCartBtn.addEventListener('click', () => cartModal.classList.remove('open'));
+    cartModal.addEventListener('click', (e) => {
+      if (e.target === cartModal) cartModal.classList.remove('open');
+    });
+
+    document.getElementById('checkout-btn').addEventListener('click', () => {
+      if (cart.length === 0) {
+        alert('Agrega al menos un juego antes de finalizar la compra.');
+        return;
+      }
+      const total = cart.reduce((acc, item) => acc + item.price, 0);
+      alert(`¡Compra realizada con éxito!\nJuegos adquiridos: ${cart.length}\nTotal pagado: $${total.toFixed(2)} USD\nTus claves de Steam han sido generadas.`);
+      cart.length = 0;
+      updateCartUI();
+      cartModal.classList.remove('open');
+    });
+
+    // Filtros de categoría y buscador en tiempo real
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const searchInput = document.getElementById('game-search');
+    const gameCards = document.querySelectorAll('.game-card');
+    let currentFilter = 'all';
+
+    function filterGames() {
+      const query = searchInput.value.toLowerCase().trim();
+      gameCards.forEach(card => {
+        const categories = card.dataset.category;
+        const title = card.dataset.title;
+        const matchesCategory = currentFilter === 'all' || categories.includes(currentFilter);
+        const matchesSearch = title.includes(query);
+        card.style.display = (matchesCategory && matchesSearch) ? 'flex' : 'none';
+      });
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.dataset.filter;
+        filterGames();
+      });
+    });
+
+    searchInput.addEventListener('input', filterGames);
+
+    // Asignar cascada escalonada (stagger) y clase 3D a las tarjetas del catálogo
+    gameCards.forEach((card, index) => {
+      card.classList.remove('reveal');
+      card.classList.add('reveal-card');
+      // Retraso por columna (0ms, 150ms, 300ms) para que aparezcan progresivamente y no de golpe
+      const colDelay = (index % 3) * 150;
+      card.style.setProperty('--delay', `${colDelay}ms`);
+    });
+
+    // Animación Scroll Reveal bidireccional y pausada con IntersectionObserver
+    const revealSelector = '.reveal, .reveal-left, .reveal-right, .reveal-zoom, .reveal-card';
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else if (entry.boundingClientRect.top > 0) {
+          // Si el usuario sube, se reinicia suavemente para volver a animarse al bajar
+          entry.target.classList.remove('visible');
+          entry.target.style.transform = '';
+        }
+      });
+    }, {
+      threshold: 0.18,
+      rootMargin: '0px 0px -70px 0px'
+    });
+
+    document.querySelectorAll(revealSelector).forEach(el => observer.observe(el));
+
+    // Efectos Parallax y barra de progreso en tiempo real al hacer Scroll
+    const scrollProgress = document.getElementById('scroll-progress');
+    const heroBadges = document.querySelector('.hero-floating-badges');
+    const tiltedLeft = document.querySelector('.tilted-frame');
+    const tiltedRight = document.querySelector('.tilted-frame-right');
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrollY = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const pct = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
+          scrollProgress.style.width = `${pct}%`;
+
+          // Parallax suave en las insignias del Hero
+          if (heroBadges && scrollY < 700) {
+            heroBadges.style.transform = `translateY(${scrollY * -0.22}px)`;
+          }
+
+          // Inclinación y parallax dinámico en los marcos cuando ya son visibles
+          if (tiltedLeft && tiltedLeft.classList.contains('visible')) {
+            const rect = tiltedLeft.getBoundingClientRect();
+            const offset = (window.innerHeight / 2 - rect.top) * 0.008;
+            tiltedLeft.style.transform = `rotate(${Math.max(-4, Math.min(2, -1.8 + offset))}deg)`;
+          }
+          if (tiltedRight && tiltedRight.classList.contains('visible')) {
+            const rect = tiltedRight.getBoundingClientRect();
+            const offset = (window.innerHeight / 2 - rect.top) * -0.008;
+            tiltedRight.style.transform = `rotate(${Math.max(-2, Math.min(4, 1.5 + offset))}deg)`;
+          }
+
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  </script>
+</body>
+</html>
+
