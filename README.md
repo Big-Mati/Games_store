@@ -42,36 +42,65 @@
     </a>
   </p>
 
-  <!-- MOCKUP PRINCIPAL PANORÁMICO CON MARCO DE NAVEGADOR OSCURO Y FONDO DEGRADADO -->
+  <!-- IMAGEN PRINCIPAL PANORÁMICA (SERVIDOR CDN DIRECTO - NUNCA SE ROMPE) -->
   <a href="https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html" target="_blank">
-    <img src="https://api.microlink.io/?url=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2FBig-Mati%2FGames_store%2Fblob%2Fmain%2Findex.html&screenshot=true&meta=false&embed=screenshot.url&waitForTimeout=3500&viewport.width=1366&viewport.height=768&screenshot.overlay.browser=dark&screenshot.overlay.background=linear-gradient(135deg%2C%20%23050811%200%25%2C%20%230a192f%2045%25%2C%20%230052d4%2080%25%2C%20%2300e5ff%20100%25)" width="96%" alt="Mockup Principal Games Store" />
+    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&h=550&q=85" width="96%" alt="Vista Principal Games Store" />
   </a>
-  <p><sub><i>🖥️ Vista panorámica de escritorio con marco de navegador oscuro renderizada directamente desde <code>index.html</code> y <code>style.css</code>.</i></sub></p>
+  <p><sub><i>🖥️ Haz clic sobre la imagen o en el botón superior para abrir la página <code>index.html</code> directamente en tu navegador.</i></sub></p>
 
 </div>
 
 <br>
 
-<!-- CUADRÍCULA DE VISTAS DETALLADAS (CATÁLOGO COMPLETO + VISTA ADAPTATIVA) -->
+<!-- CUADRÍCULA DE VISTAS DETALLADAS -->
 <table width="100%">
   <tr>
-    <td width="55%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <p>
-        <img src="https://img.shields.io/badge/VISTA_DETALLADA-DISE%C3%91O_DE_TARJETAS_Y_CAT%C3%81LOGO-0072FF?style=for-the-badge&labelColor=0d1117" alt="Vista Tarjetas" />
+        <img src="https://img.shields.io/badge/VISTA_01-DISE%C3%91O_DE_TARJETAS_Y_CAT%C3%81LOGO-0072FF?style=for-the-badge&labelColor=0d1117" alt="Vista Tarjetas" />
       </p>
       <a href="https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html" target="_blank">
-        <img src="https://api.microlink.io/?url=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2FBig-Mati%2FGames_store%2Fblob%2Fmain%2Findex.html&screenshot=true&meta=false&embed=screenshot.url&waitForTimeout=3500&viewport.width=1200&viewport.height=1200&screenshot.overlay.browser=dark&screenshot.overlay.background=linear-gradient(225deg%2C%20%230052d4%200%25%2C%20%230a192f%2060%25%2C%20%23050811%20100%25)" width="100%" alt="Vista Catálogo Completo" />
+        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&h=480&q=80" width="100%" alt="Vista Catálogo Completo" />
       </a>
-      <p><sub><i>🃏 Maquetación completa de las tarjetas de videojuegos y distribución visual.</i></sub></p>
+      <p><sub><i>🃏 Presentación visual de videojuegos mediante tarjetas estilizadas en CSS3.</i></sub></p>
     </td>
-    <td width="45%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <p>
-        <img src="https://img.shields.io/badge/VISTA_COMPACTA-FORMATO_VERTICAL-0052D4?style=for-the-badge&labelColor=0d1117" alt="Vista Vertical" />
+        <img src="https://img.shields.io/badge/VISTA_02-EST%C3%89TICA_Y_TEMA_GAMER-0052D4?style=for-the-badge&labelColor=0d1117" alt="Vista Gamer" />
       </p>
       <a href="https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html" target="_blank">
-        <img src="https://api.microlink.io/?url=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2FBig-Mati%2FGames_store%2Fblob%2Fmain%2Findex.html&screenshot=true&meta=false&embed=screenshot.url&waitForTimeout=3500&viewport.width=768&viewport.height=950&screenshot.overlay.browser=dark&screenshot.overlay.background=linear-gradient(135deg%2C%20%2300e5ff%200%25%2C%20%230052d4%2050%25%2C%20%23050811%20100%25)" width="100%" alt="Vista Compacta" />
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&h=480&q=80" width="100%" alt="Vista Estética Gamer" />
       </a>
-      <p><sub><i>📱 Adaptación de la interfaz en formato compacto/vertical.</i></sub></p>
+      <p><sub><i>🎨 Interfaz moderna adaptada a tiendas digitales de videojuegos.</i></sub></p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- MUESTRA DE TARJETAS DEL CATÁLOGO -->
+<table width="100%">
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&h=280&q=80" width="100%" alt="Card 1" />
+      <br>
+      <b>CATÁLOGO DE ACCIÓN & eSPORTS</b>
+      <br>
+      <img src="https://img.shields.io/badge/TARJETA_HTML5-ESTILIZADA-00E5FF?style=flat-square&labelColor=0d1117" alt="Tag 1" />
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=500&h=280&q=80" width="100%" alt="Card 2" />
+      <br>
+      <b>LANZAMIENTOS & MUNDO ABIERTO</b>
+      <br>
+      <img src="https://img.shields.io/badge/DISE%C3%91O_CSS3-MODERNO-0072FF?style=flat-square&labelColor=0d1117" alt="Tag 2" />
+    </td>
+    <td width="33%" align="center" valign="top">
+      <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=500&h=280&q=80" width="100%" alt="Card 3" />
+      <br>
+      <b>EDICIONES ESPECIALES & CONSOLA</b>
+      <br>
+      <img src="https://img.shields.io/badge/INTERFAZ-RESPONSIVA-0052D4?style=flat-square&labelColor=0d1117" alt="Tag 3" />
     </td>
   </tr>
 </table>
