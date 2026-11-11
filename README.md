@@ -1,11 +1,13 @@
 <div align="center">
 
-  <!-- BANNER PRINCIPAL -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050811,35:0a192f,70:0052d4,100:00d2ff&height=200&section=header&text=GAMES%20STORE&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=TIENDA%20WEB%20DE%20VIDEOJUEGOS%20%7C%20DISE%C3%91O%20FRONTEND%20HTML5%20%26%20CSS3&descAlignY=65&descSize=14" width="100%" alt="Games Store Banner" />
+  <!-- BANNER PRINCIPAL (CORREGIDO SIN SÍMBOLO & PARA QUE NO SE ROMPA EL SVG) -->
+  <p align="center">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050811,35:0a192f,70:0052d4,100:00d2ff&height=210&section=header&text=GAMES%20STORE&fontSize=54&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=TIENDA%20WEB%20DE%20VIDEOJUEGOS%20%7C%20DISE%C3%91O%20FRONTEND%20HTML5%20Y%20CSS3&descAlignY=62&descSize=14" width="100%" alt="Games Store Banner" />
+  </p>
 
   <!-- BOTÓN DE DEMO EN VIVO E INSIGNIAS -->
   <p align="center">
-    <a href="https://raw.githack.com/Big-Mati/Games_store/main/index.html" target="_blank">
+    <a href="https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html" target="_blank">
       <img src="https://img.shields.io/badge/🌐_VER_P%C3%81GINA_WEB-DEMO_EN_VIVO-00E5FF?style=for-the-badge&labelColor=0d1117" alt="Ver Demo en Vivo" />
     </a>
     <img src="https://img.shields.io/badge/HTML5-61.7%25-0072FF?style=for-the-badge&logo=html5&logoColor=00E5FF&labelColor=0d1117" alt="HTML5" />
@@ -25,7 +27,7 @@
 
 ### 📸 Capturas de la Página Web (`index.html`)
 
-> 🌐 **Enlace directo a la página funcionando:** [**Abrir Games Store en el navegador**](https://raw.githack.com/Big-Mati/Games_store/main/index.html)
+> 🌐 **Enlace directo a la página funcionando:** [**Abrir Games Store en el navegador**](https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html)
 
 <table width="100%">
   <tr>
@@ -33,8 +35,8 @@
       <p>
         <img src="https://img.shields.io/badge/VISTA_01-PANTALLA_PRINCIPAL-0072FF?style=for-the-badge&labelColor=0d1117" alt="Vista Principal" />
       </p>
-      <a href="https://raw.githack.com/Big-Mati/Games_store/main/index.html" target="_blank">
-        <img src="https://api.microlink.io/?url=https%3A%2F%2Fraw.githack.com%2FBig-Mati%2FGames_store%2Fmain%2Findex.html&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800" width="100%" alt="Captura Principal Games Store" />
+      <a href="https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html" target="_blank">
+        <img src="https://api.microlink.io/?url=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2FBig-Mati%2FGames_store%2Fblob%2Fmain%2Findex.html&screenshot=true&meta=false&embed=screenshot.url&waitForTimeout=3500&viewport.width=1280&viewport.height=800" width="100%" alt="Captura Principal Games Store" />
       </a>
       <p><sub><i>Vista principal renderizada directamente desde index.html</i></sub></p>
     </td>
@@ -42,8 +44,8 @@
       <p>
         <img src="https://img.shields.io/badge/VISTA_02-DISE%C3%91O_DE_TARJETAS-0052D4?style=for-the-badge&labelColor=0d1117" alt="Vista Tarjetas" />
       </p>
-      <a href="https://raw.githack.com/Big-Mati/Games_store/main/index.html" target="_blank">
-        <img src="https://image.thum.io/get/width/1200/crop/1200/noanimate/https://raw.githack.com/Big-Mati/Games_store/main/index.html" width="100%" alt="Captura Tarjetas Games Store" />
+      <a href="https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html" target="_blank">
+        <img src="https://api.microlink.io/?url=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2FBig-Mati%2FGames_store%2Fblob%2Fmain%2Findex.html&screenshot=true&meta=false&embed=screenshot.url&waitForTimeout=3500&viewport.width=1280&viewport.height=1350" width="100%" alt="Captura Tarjetas Games Store" />
       </a>
       <p><sub><i>Distribución completa del catálogo y diseño de tarjetas</i></sub></p>
     </td>
