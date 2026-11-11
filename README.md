@@ -28,79 +28,39 @@
 
 ### 🎮 Descripción del Proyecto
 
-**Games Store** es una interfaz web de tienda de videojuegos desarrollada con **HTML5 y CSS3**. Cuenta con una estructura moderna enfocada en la presentación visual de catálogos gamer mediante **tarjetas de videojuegos estilizadas**, efectos visuales y un diseño limpio de rápida respuesta.
+**Games Store** es una interfaz web de tienda de videojuegos desarrollada con **HTML5 y CSS3**. Cuenta con una estructura moderna enfocada en la presentación visual de catálogos gamer mediante **tarjetas de videojuegos estilizadas**, efectos visuales y un diseño limpio.
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
 
-### 📸 Galería y Vista Previa de la Página (`index.html`)
+### 📸 Capturas de la Página Web (`index.html`)
 
 <div align="center">
-
   <p>
     <a href="https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html" target="_blank">
-      <img src="https://img.shields.io/badge/🚀_ABRIR_INTERFAZ_INTERACTIVA_EN_EL_NAVEGADOR-CLIC_AQU%C3%8D-0072FF?style=for-the-badge&logo=googlechrome&logoColor=00E5FF&labelColor=0d1117" alt="Abrir Página" />
+      <img src="https://img.shields.io/badge/🚀_ABRIR_P%C3%81GINA_WEB_EN_EL_NAVEGADOR-CLIC_AQU%C3%8D-0072FF?style=for-the-badge&logo=googlechrome&logoColor=00E5FF&labelColor=0d1117" alt="Abrir Página" />
     </a>
   </p>
-
-  <!-- IMAGEN PRINCIPAL PANORÁMICA (SERVIDOR CDN DIRECTO - NUNCA SE ROMPE) -->
-  <a href="https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html" target="_blank">
-    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&h=550&q=85" width="96%" alt="Vista Principal Games Store" />
-  </a>
-  <p><sub><i>🖥️ Haz clic sobre la imagen o en el botón superior para abrir la página <code>index.html</code> directamente en tu navegador.</i></sub></p>
-
 </div>
 
-<br>
-
-<!-- CUADRÍCULA DE VISTAS DETALLADAS -->
 <table width="100%">
   <tr>
     <td width="50%" align="center" valign="top">
       <p>
-        <img src="https://img.shields.io/badge/VISTA_01-DISE%C3%91O_DE_TARJETAS_Y_CAT%C3%81LOGO-0072FF?style=for-the-badge&labelColor=0d1117" alt="Vista Tarjetas" />
+        <img src="https://img.shields.io/badge/VISTA_01-PANTALLA_PRINCIPAL_(INDEX.HTML)-0072FF?style=for-the-badge&labelColor=0d1117" alt="Vista Principal" />
       </p>
       <a href="https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html" target="_blank">
-        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&h=480&q=80" width="100%" alt="Vista Catálogo Completo" />
+        <img src="https://api.microlink.io/?url=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2FBig-Mati%2FGames_store%2Fblob%2Fmain%2Findex.html&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800" width="100%" alt="Captura Principal Games Store" />
       </a>
-      <p><sub><i>🃏 Presentación visual de videojuegos mediante tarjetas estilizadas en CSS3.</i></sub></p>
+      <p><sub><i>Vista principal renderizada desde <code>index.html</code> y <code>style.css</code></i></sub></p>
     </td>
     <td width="50%" align="center" valign="top">
       <p>
-        <img src="https://img.shields.io/badge/VISTA_02-EST%C3%89TICA_Y_TEMA_GAMER-0052D4?style=for-the-badge&labelColor=0d1117" alt="Vista Gamer" />
+        <img src="https://img.shields.io/badge/VISTA_02-CAT%C3%81LOGO_Y_TARJETAS-0052D4?style=for-the-badge&labelColor=0d1117" alt="Vista Tarjetas" />
       </p>
       <a href="https://htmlpreview.github.io/?https://github.com/Big-Mati/Games_store/blob/main/index.html" target="_blank">
-        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&h=480&q=80" width="100%" alt="Vista Estética Gamer" />
+        <img src="https://image.thum.io/get/width/1200/crop/900/noanimate/?url=https%3A%2F%2Fhtmlpreview.github.io%2F%3Fhttps%3A%2F%2Fgithub.com%2FBig-Mati%2FGames_store%2Fblob%2Fmain%2Findex.html" width="100%" alt="Captura Tarjetas Games Store" />
       </a>
-      <p><sub><i>🎨 Interfaz moderna adaptada a tiendas digitales de videojuegos.</i></sub></p>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<!-- MUESTRA DE TARJETAS DEL CATÁLOGO -->
-<table width="100%">
-  <tr>
-    <td width="33%" align="center" valign="top">
-      <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&h=280&q=80" width="100%" alt="Card 1" />
-      <br>
-      <b>CATÁLOGO DE ACCIÓN & eSPORTS</b>
-      <br>
-      <img src="https://img.shields.io/badge/TARJETA_HTML5-ESTILIZADA-00E5FF?style=flat-square&labelColor=0d1117" alt="Tag 1" />
-    </td>
-    <td width="33%" align="center" valign="top">
-      <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=500&h=280&q=80" width="100%" alt="Card 2" />
-      <br>
-      <b>LANZAMIENTOS & MUNDO ABIERTO</b>
-      <br>
-      <img src="https://img.shields.io/badge/DISE%C3%91O_CSS3-MODERNO-0072FF?style=flat-square&labelColor=0d1117" alt="Tag 2" />
-    </td>
-    <td width="33%" align="center" valign="top">
-      <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=500&h=280&q=80" width="100%" alt="Card 3" />
-      <br>
-      <b>EDICIONES ESPECIALES & CONSOLA</b>
-      <br>
-      <img src="https://img.shields.io/badge/INTERFAZ-RESPONSIVA-0052D4?style=flat-square&labelColor=0d1117" alt="Tag 3" />
+      <p><sub><i>Diseño de tarjetas y maquetación de la tienda</i></sub></p>
     </td>
   </tr>
 </table>
